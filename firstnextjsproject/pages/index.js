@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Index.module.css'
-import Link from 'next/link'
+import Navbar from '@/components/navbar'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,22 +17,7 @@ export default function Index() {
       </Head>
       <main className={styles.index}>
         <h1>Hello World</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link href='/home'>Home</Link>
-            </li>
-            <li>
-              <Link href='/about'>About</Link>
-            </li>
-            <li>
-              <Link href='/contact'>Contact</Link>
-            </li>
-            <li>
-              <Link href='/blog'>Blog</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </main>
     </>
   )
