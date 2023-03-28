@@ -1,8 +1,18 @@
 .index {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjhwbtSvro-Drg_tVcXpO_ehhyQBfXJw_Kig&usqp=CAU");
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 50vh;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.heading {
+  margin-bottom: 500px; /* adjust this value to increase or decrease the space between navbar and h1 */
+  text-decoration: none;
+  text-shadow: 0px 0px 5px rgb(4, 245, 245); /* changed from "rgb(4, 245, 245)" to "0px 0px 5px rgb(4, 245, 245)" to add a shadow effect */
+  color: rgb(14, 15, 15);
 }

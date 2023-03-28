@@ -17,7 +17,7 @@ export default function Index() {
       </Head>
       <main className={styles.index}>
       <Navbar />
-        <h1 className='heading'>Hello World</h1> 
+        <h1 className={styles.heading}>Hello World</h1> 
       </main>
     </>
   )

@@ -21,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1d740;
     color: #ebecf3;
     padding: 10px;
     width: 100%;
@@ -32,11 +31,12 @@
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 1px; 
+    padding: 5px; 
   }
   
   .navbar li {
     margin-right: 20px;
+
   }
   
   .navbar li:last-child {
@@ -45,11 +45,11 @@
 
   
   .navbar a {
-    color: #4a0eee;
+    color: #cadd1a;
     text-decoration: none;
-    font-size: 18px;
+    font-size: larger;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
   }
   
   .navbar span:hover {
@@ -57,9 +57,7 @@
   }
   
   @media screen and (max-width: 500px) {
-    .navbar{
-      background-color: burlywood;
-    }
+   
     .navbar ul {
       flex-direction: column;
       align-items: start;
