@@ -25,14 +25,14 @@ const Id = ({ data }) => {
     <>
       <Navbar />
       <div key={id} className={styles.box}>
-          <span>{title}</span>
-          <span>{brand}</span>
-          <span>{category}</span>
-          <span>{description}</span>
-          <span>{price}</span>
-          <span>{discountPercentage}</span>
-          <span>{rating}</span>
-          <span>{stock}</span>
+          <span>Title: {title}</span>
+          <span>Brand: {brand}</span>
+          <span>Category: {category}</span>
+          <span>Description: {description}</span>
+          <span>Price: {price}</span>
+          <span>Discount Percentage: {discountPercentage}</span>
+          <span>Rating: {rating}</span>
+          <span>Stock: {stock}</span>
       </div>
 
     </>
