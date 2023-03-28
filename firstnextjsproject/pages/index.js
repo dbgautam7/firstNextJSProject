@@ -16,8 +16,8 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.index}>
-        <h1>Hello World</h1>
-        <Navbar />
+      <Navbar />
+        <h1 className='heading'>Hello World</h1> 
       </main>
     </>
   )
