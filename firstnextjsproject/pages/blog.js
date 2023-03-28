@@ -1,5 +1,6 @@
 import Navbar from '@/components/navbar'
 import styles from '@/styles/home.module.css'
+import Link from 'next/link'
 
 export const getStaticProps=async()=> {
   const res = await fetch('https://dummyjson.com/products')
@@ -16,7 +17,7 @@ export const getStaticProps=async()=> {
 }
 
 const Blog = ({data}) => {
-  console.log(data,"data")
+  // console.log(data,"data")
   return (
     <div className={styles.blog}>
       <Navbar />
@@ -26,10 +27,14 @@ const Blog = ({data}) => {
           return (
             <div key={id}>
               <ul>
+              
                 <li>
                <h3>{item.id}</h3>
+               <Link href={`/blog/${item.id}`}>
             <h3>{item.title}</h3>
+            </Link>
             </li>
+           
             </ul>
             </div>
           )
